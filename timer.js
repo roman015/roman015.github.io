@@ -1,4 +1,5 @@
 ﻿var timeinterval = 0;
+var clock = null;
 
 function getTimeSince(startTime) {
     var t = Date.parse(new Date()) - Date.parse(startTime);
@@ -18,11 +19,13 @@ function getTimeSince(startTime) {
 }
 
 function initializeClock(id, starttime) {
-    var clock = document.getElementById(id);
+    if (clock == null) {
+        clock = document.getElementById(id);
+    }
 
-    if(timeinterval != 0){
+    if (timeinterval != 0) {
         clearInterval(timeinterval);
-        clock.innerHTML = '0 seconds'; 
+        clock.innerHTML = '0 seconds';
     }
 
     timeinterval = setInterval(function () {

@@ -20,6 +20,13 @@
 
     <!-- Timer Code For the Button -->
     <script src="./timer.js"></script>
+
+    <script>
+        function changeAccouncementText(id){
+            var announcement = document.getElementById(id);
+            announcement.innerHTML = 'Since the button was pressed!';
+        }
+    </script>
 </head>
 
 <body onload="initializeClock('timer', new Date())">
@@ -27,7 +34,7 @@
         <div class="container-fill">
             <div class="row form-group">
                 <div class="col align-self-center text-center">
-                    <button class="btn btn-primary" onclick="initializeClock('timer', new Date())">Press Me</button>
+                    <button class="btn btn-primary" onclick="changeAccouncementText('announce');initializeClock('timer', new Date())">Press Me</button>
                 </div>
             </div>
             <div class="row">
@@ -42,7 +49,7 @@
             </div>
             <div class="row">
                 <div class="col align-self-center">
-                    <h3 class="text-center">Since the button was pressed!</h3>
+                    <h3 id="announce" class="text-center">And the button hasn't been pressed</h3>
                 </div>
             </div>
         </div>
