@@ -1,4 +1,4 @@
-﻿var timeinterval = 0;
+var timeinterval = 0;
 var clock = null;
 
 function getTimeSince(startTime) {

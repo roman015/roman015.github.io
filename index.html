@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Press The Button!</title>
+    <title>Roman015's Toybox</title>
 
     <!-- Bootstrap Includes -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
@@ -18,42 +18,59 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
 
-    <!-- Timer Code For the Button -->
-    <script src="./timer.js"></script>
-
-    <script>
-        function changeAccouncementText(id){
-            var announcement = document.getElementById(id);
-            announcement.innerHTML = 'Since the button was pressed!';
-        }
-    </script>
+    <!-- Custom styles for this template -->
+    <link href="/css/footer.css" rel="stylesheet">
 </head>
 
-<body onload="initializeClock('timer', new Date())">
+<body>
     <div class="jumbotron">
-        <div class="container-fill">
+        <div class="container">
             <div class="row form-group">
                 <div class="col align-self-center text-center">
-                    <button class="btn btn-primary" onclick="changeAccouncementText('announce');initializeClock('timer', new Date())">Press Me</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col align-self-center">
-                    <h3 class="text-center">It's been</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col align-self-center">
-                    <h1 id="timer" class="text-center"></h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col align-self-center">
-                    <h3 id="announce" class="text-center">And the button hasn't been pressed</h3>
+                    <h1>
+                        <p>Welcome to Roman015's Toybox</p>
+                        <img style="max-width:5%" src="images/noun_1230926_cc.png" />
+                        <img style="max-width:5%" src="images/noun_736322_cc.png" />
+                        <img style="max-width:5%" src="images/noun_269157_cc.png" />
+                    </h1>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row form-group">
+            <div class="col align-self-center">
+                <table class="table">
+                    <tr>
+                        <th>
+                            Toy
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="./TestButton/index.html">Test Button</a>
+                        </td>
+                        <td>
+                            A simple button using javascript. There's also a timer that counts how long since the button has been pressed.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <a href="roman015.github.io">Home</a>|
+                <a href="./credits.html">Image credits</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
