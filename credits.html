@@ -19,7 +19,10 @@
         crossorigin="anonymous"></script>
 
     <!-- Custom styles for this template -->
-    <link href="/css/footer.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+
+    <!-- Cheesy Way To Include Other HTML Code -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 </head>
 
@@ -42,13 +45,11 @@
         <p><a href="https://thenounproject.com/icon/269157/">Propeller cap</a> by Ben Davis</p>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="text-muted">
-                <a href="https://roman015.github.io">Home</a> | <a href="./credits.html">Image credits</a>
-            </p>
-        </div>
-    </footer>
+    <div w3-include-html="./footer.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 
 </html>
