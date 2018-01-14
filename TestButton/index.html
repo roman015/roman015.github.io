@@ -24,6 +24,9 @@
     <!-- Cheesy Way To Include Other HTML Code -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
+    <!-- CSS for the Button -->
+    <link href="./button.css" rel="stylesheet" crossorigin="anonymous">
+
     <!-- Timer Code For the Button -->
     <script src="./timer.js"></script>
 
@@ -56,8 +59,11 @@
             <div class="container">
                 <div class="row form-group">
                     <div class="col align-self-center text-center">
-                        <button class="btn btn-primary" onclick="changeAccouncementText('announce');initializeClock('timer', new Date())">Press Me</button>
+                        <a class="btn-push red" href="javascript:changeAccouncementText('announce');initializeClock('timer', new Date());">Press Me</a>
                     </div>
+                </div>
+                <div class="row form-group">
+                    <!-- Just an empty Row -->
                 </div>
                 <div class="row">
                     <div class="col align-self-center">
